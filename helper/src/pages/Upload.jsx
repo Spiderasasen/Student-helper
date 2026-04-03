@@ -3,28 +3,40 @@ import "../styles/upload.css"
 
 function Upload(){
     return(
-        <div className="home-container">
-
-            {/*title of the page*/}
-            <div className="home-title">
+        <div className="upload-conatiner">
+            {/*Title area*/}
+            <div className="upload-header">
                 <h1>Upload a Syllabus</h1>
-                <p className="title">Please upload your syllabus, so we can grab all the weights of the grades and give you an accurate account of all your grades</p>
+                {/*subheader*/}
+                <p className="upload-subtitle">
+                   Please upload your syllabus so we can extract the grading weight
+                    and generate accurate predictions for your class performance
+                </p>
             </div>
 
-            {/*upload area*/}
-            <div>
-                <div>
-                    <p>Please enter here</p>
+            {/*Upload area*/}
+            <div className="upload-area">
+
+                {/*uploading a file*/}
+                <div className="upload-box">
+                    <p className="upload-instructions">Choose your syllabus file</p>
+                    <input
+                        type="file"
+                        accept=".pdf,.doc,.docx,.txt"
+                        className="upload-input"
+                    />
                 </div>
 
-                {/*button to submit only if the file has been uploaded*/}
-                <div>
-                    <p>Button goes here</p>
+                {/*submit button*/}
+                <div className="upload-submit">
+                    <button className="upload-button" disabled>
+                        Continue
+                    </button>
+                    <p className="upload-note">Button activates once a file is selected</p>
                 </div>
             </div>
 
         </div>
-
     )
 }
 export default Upload;
