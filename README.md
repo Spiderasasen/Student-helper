@@ -1,14 +1,16 @@
 # Student-helper
 
 ## Must needs
-- sylabus scanner
+- syllabus scanner
   - used to check on the weight of the class assignment or quiz
-    - with the help of ai, it will help the project feel better. it will be very ai heavy on this section (used to help learn more on ai incorpreation)
-- an assignment inputer
-  - to see what type of assignment is being created and also to see if the assignment matches with the correct section from of the weight
+    - With the help of AI, it will help the project will feel better. It will be very AI-heavy in this section (used to help learn more about AI incorporation)
+- an assignment inputter
+  - to see what type of assignment is being created, and also to see if the assignment matches the correct section of the weight
 - GPA predictor
-  - enter the current gpa of the student
-  - pridects on what will happen depending on the class grade
+  - Enter the current GPA of the student
+  - Predicts what will happen depending on the class grade
     - might need to add classes to this
 - What if
-  - What if the user fails a test or the class
+  - What if the user fails or passes a test or the class
+    - What will the grade change be
+    - What will the GPA be because of the action
