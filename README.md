@@ -10,3 +10,5 @@
   - enter the current gpa of the student
   - pridects on what will happen depending on the class grade
     - might need to add classes to this
+- What if
+  - What if the user fails a test or the class
