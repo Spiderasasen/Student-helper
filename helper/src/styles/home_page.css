@@ -7,6 +7,7 @@
 .home-title {
     font-size: 32px;
     margin-bottom: 30px;
+    margin-top: 25%;
 }
 
 .home-buttons {
@@ -41,5 +42,5 @@
     color: #555;
 }
 body {
-    background-color: #646464;
+    background-color: #475254;
 }

@@ -4,7 +4,10 @@ function Home() {
     return (
         <div className="home-container">
 
-            <h1 className="home-title">Student Helper</h1>
+            <div className="home-title">
+                <h1>Student Helper</h1>
+                <h2>Calculate if you can pass your classes</h2>
+            </div>
 
             <div className="home-buttons">
 
