@@ -1,6 +1,10 @@
 import "../styles/home_page.css"
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+    //navigation tab
+    const navigate = useNavigate();
+
     return (
         <div className="home-container">
 
@@ -12,7 +16,7 @@ function Home() {
             <div className="home-buttons">
 
                 {/* Upload Syllabus */}
-                <div className="home-card">
+                <div className="home-card" onClick={() => navigate("/upload")}>
                     <h3 className="card-title">Upload a Syllabus</h3>
                     <p className="card-description">
                         Scan your syllabus and extract assignment weights automatically.
