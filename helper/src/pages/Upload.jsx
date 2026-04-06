@@ -1,7 +1,17 @@
 import "../styles/main.css"
 import "../styles/upload.css"
+import { useState } from "react";
 
 function Upload() {
+
+    //checking that the file was uploaded
+    const [file, setFile] = useState(null);
+
+    //when the user selects a file
+    const handleFileChange = (e) => {
+        setFile(e.target.files[0]);
+    };
+
     return (
         <div className="upload-container">
 
@@ -23,15 +33,22 @@ function Upload() {
                         type="file"
                         accept=".pdf,.doc,.docx,.txt"
                         className="upload-input"
+                        onChange={handleFileChange}
                     />
                 </div>
 
                 {/* Submit Button */}
                 <div className="upload-submit">
-                    <button className="upload-button" disabled>
+                    <button
+                        className={`upload-button ${file ? "active" : ""}`}
+                        disabled={!file}
+                    >
                         Continue
                     </button>
-                    <p className="upload-note">Button activates once a file is selected</p>
+
+                    {!file && (
+                        <p className="upload-note">Button activates once a file is selected</p>
+                    )}
                 </div>
 
             </div>
